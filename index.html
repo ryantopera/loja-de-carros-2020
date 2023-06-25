@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Loja de Carros 2020</title>
+    <style>
+        /* Estilos gerais */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Estilos do cabeçalho */
+        header {
+            background-color: #ff0303;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 30px;
+        }
+
+        /* Estilos dos carros */
+        .car-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .car-card {
+            width: 30%;
+            margin-bottom: 30px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .car-card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .car-info {
+            padding: 20px;
+        }
+
+        .car-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .car-description {
+            margin-bottom: 20px;
+        }
+
+        .car-price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* Estilos do rodapé */
+        footer {
+            background-color: #ff0606;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Estilos responsivos */
+        @media (max-width: 768px) {
+            .car-card {
+                width: 48%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .car-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Loja de Carros 2020</h1>
+    </header>
+
+    <div class="container">
+        <div class="car-list">
+            <div class="car-card">
+                <img src="C:\Users\Kirfe\Downloads\ferrari.jpg" alt="FERRARI">
+                <div class="car-info">
+                    <h2 class="car-title">FERRARI</h2>
+                    <p class="car-description">Descrição do Carro 1</p>
+                    <p class="car-price">$10.000</p>
+                    <a href="pag7.html">COMPRAR</a>
+                </div>
+            </div>
+
+            <div class="car-card">
+                <img src="C:\Users\Kirfe\Downloads\porsche.jpeg" alt="PORSCHE">
+                <div class="car-info">
+                    <h2 class="car-title">PORSCHE</h2>
+                    <p class="car-description">Descrição do Carro 2</p>
+                    <p class="car-price">$15.000</p>
+                    <a href="pag7.html">COMPRAR</a>
+                </div>
+            </div>
+
+            <!-- Adicione mais carros aqui -->
+
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2023 Loja de Carros 2020. Todos os direitos reservados.
+    </footer>
+</body>
+</html>

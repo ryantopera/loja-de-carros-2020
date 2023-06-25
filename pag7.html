@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Loja de Carros 2020 - Compra</title>
+    <style>
+        /* Estilos gerais */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Estilos do cabeçalho */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 30px;
+        }
+
+        /* Estilos do formulário */
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-field {
+            margin-bottom: 20px;
+        }
+
+        .form-field label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .form-field input[type="text"],
+        .form-field input[type="email"],
+        .form-field select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-field textarea {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-submit {
+            text-align: right;
+        }
+
+        /* Estilos responsivos */
+        @media (max-width: 768px) {
+            form {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Loja de Carros 2020</h1>
+    </header>
+
+    <div class="container">
+        <h2>Compra do Carro</h2>
+
+        <form>
+            <div class="form-field">
+                <label for="name">Nome Completo:</label>
+                <input type="text" id="name" required>
+            </div>
+
+            <div class="form-field">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" required>
+            </div>
+
+            <div class="form-field">
+                <label for="phone">Telefone:</label>
+                <input type="text" id="phone" required>
+            </div>
+
+            <div class="form-field">
+                <label for="address">Endereço:</label>
+                <textarea id="address" required></textarea>
+            </div>
+
+            <div class="form-field form-submit">
+                <input type="submit" value="Finalizar Compra" formaction="pag8.html">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
